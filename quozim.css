@@ -11,8 +11,8 @@ body {
     padding: 0px;
     height: 100%;
     width: 100%;
-    background-color: #1B497B;
-    color: #fff;
+    background-color: #fff; /*#1B497B;*/
+    color: #0C3C5D; /*#fff;*/
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -97,12 +97,12 @@ body #top_container a {
 #hire_link a {
     font-size: 2em;
     letter-spacing: 0.7px;
-    color: #F2D7C6 !important;
-    border-bottom: 1px dotted #F2D7C6;
+    color: #177BBF !important;
+    border-bottom: 1px dotted #177BBF;
     -webkit-transition: all 0.3s;
 }
 #hire_link a:hover {
-   color: #fff !important;
+   color: #0C3C5D !important;
 }
 
 
@@ -177,6 +177,7 @@ ol li {
     border-width: 0px;
     padding: 5px;
     width: 300px;
+    border: 1px solid #333;
 }
 #hire_me_form .form_element::after {
     content: ' ';
@@ -216,4 +217,49 @@ ol li {
 
 .thank_you_msg {
     text-align: center;
+}
+
+
+
+/* Background video */
+.homepage-hero-module {
+    border-right: none;
+    border-left: none;
+    position: relative;
+}
+.no-video .video-container video,
+.touch .video-container video {
+    display: none;
+}
+.no-video .video-container .poster,
+.touch .video-container .poster {
+    display: block !important;
+}
+.video-container {
+    position: relative;
+    bottom: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: #000;
+}
+.video-container .poster img {
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+}
+.video-container .filter {
+    z-index: 100;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+}
+.video-container video {
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+}
+.video-container video.fillWidth {
+    width: 100%;
 }
